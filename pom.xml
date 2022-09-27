@@ -16,6 +16,21 @@
       <version>2.3.1</version>
       <scope>runtime</scope>
     </dependency>
+
+  <!-- JAXB API only -->
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>3.0.0</version>
+ </dependency>
+  
+  <!-- JAXB Implementation -->
+ <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>3.0.0</version>
+      <scope>runtime</scope>
+  </dependency>
   </dependencies>
   <build>
     <pluginManagement>
