@@ -38,9 +38,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>jaxb2-maven-plugin</artifactId>
-        <!-- changed to version 3.1.0 from version 2.5.0 because version 2.5.0 
-          was ginving me issues -->
-	      <version>3.1.0</version>
+	<version>2.5.0</version>
         <executions>
           <execution>
             <id>xjc</id>
@@ -50,16 +48,10 @@
           </execution>
         </executions>
         <configuration>
-          <!-- package of the generated source files -->
-          <packageName>nz.ac.massey.cs.sdc.parsers</packageName>
-          <!-- overrides the default of outputting generated files in the
-          target/generated-resources/jaxb folder. We want the generated files to
-          be in the src/main/java directory -->
+          <!-- The package of your generated sources -->
+          <packageName>com.example.myschema</packageName>
           <outputDirectory>src/main/java</outputDirectory>
-          <!-- Prevent the generation of episode file -->
           <generateEpisode>false</generateEpisode>
-          <!-- Prevent files in the src/main/java directory from being deleted
-          before running XJC.-->
           <clearOutputDir>false</clearOutputDir>
         </configuration>
       </plugin>
